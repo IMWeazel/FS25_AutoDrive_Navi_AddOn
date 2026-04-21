@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="107">
+    <author>IMWeazel</author>
+    <version>0.1.0.0</version>
+
+    <title>
+        <en>AD Navi</en>
+        <de>AD Navi</de>
+    </title>
+    <description>
+        <en>Shows the AutoDrive route on the ingame minimap while manually driving.</en>
+        <de>Zeigt die AutoDrive-Route auf der Ingame-Minimap an, auch wenn man selbst faehrt.</de>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+
+    <multiplayer supported="false"/>
+
+    <dependencies>
+        <dependency>FS25_AutoDrive</dependency>
+    </dependencies>
+
+    <extraSourceFiles>
+        <!-- ADNaviSpec must load before ADNavi.lua (ADNavi references the class) -->
+        <sourceFile filename="scripts/ADNaviSpec.lua"/>
+        <sourceFile filename="scripts/ADNavi.lua"/>
+    </extraSourceFiles>
+
+    <l10n filenamePrefix="translations/translation"/>
+
+    <!-- Configurable input actions (appear in FS25 Controls menu).
+         Format follows AutoDrive: no axisType, space-separated multi-key input. -->
+    <actions>
+        <action name="ADNAVI_TOGGLE"   />
+        <action name="ADNAVI_SETTINGS" />
+    </actions>
+
+    <inputBinding>
+        <!-- Default: RShift + N  →  toggle route display -->
+        <actionBinding action="ADNAVI_TOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_rshift KEY_n" />
+        </actionBinding>
+        <!-- No default; user assigns in the Controls menu -->
+        <actionBinding action="ADNAVI_SETTINGS">
+        </actionBinding>
+    </inputBinding>
+
+</modDesc>

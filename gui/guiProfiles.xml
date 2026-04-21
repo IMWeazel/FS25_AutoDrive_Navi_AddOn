@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <!-- Self-contained profiles extending only core FS25 profiles (no AutoDrive dependency) -->
+
+    <Profile name="adnavi_contentContainer" extends="fs25_dialogContentContainer">
+        <flowDirection value="vertical" />
+        <elementSpacing value="10px" />
+        <alignmentX value="center" />
+        <position value="4px -10px" />
+        <absoluteSizeOffset value="21px 30px" />
+    </Profile>
+
+    <Profile name="adnavi_title" extends="baseReference" with="anchorTopStretchingX">
+        <textBold value="true"/>
+        <textLayoutMode value="resize" />
+        <textMaxNumLines value="1" />
+        <textSize value="24px"/>
+        <textUpperCase value="true"/>
+        <size value="100% 40px"/>
+    </Profile>
+
+    <Profile name="adnavi_titleSep" extends="fs25_lineSeparatorTop">
+        <absoluteSizeOffset value="100px 0" />
+    </Profile>
+
+    <!-- Tab bar between title and list -->
+    <Profile name="adnavi_tabBar" extends="emptyPanel" with="anchorTopStretchingX">
+        <flowDirection value="horizontal" />
+        <alignmentX value="center"/>
+        <alignmentY value="middle"/>
+        <size value="100% 44px"/>
+        <elementSpacing value="12px" />
+    </Profile>
+
+    <!-- Tab selector buttons.
+         - extends="button"      → base clickable element, NO key indicator bitmap
+         - imageColor            → dark-grey fill (same shade as list item background)
+         - imageSelectedColor    → FS25 green highlight (used when tab is active)
+         - textColor             → white text
+         Dialog is 600px; content area ~560px usable; 2×240 + 12 gap = 492px. -->
+    <Profile name="adnavi_tabButton" extends="button">
+        <size value="240px 36px"/>
+        <textBold value="true"/>
+        <textAlignment value="center"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <textColor value="$preset_fs25_colorTextWhite"/>
+        <textSelectedColor value="$preset_fs25_colorTextWhite"/>
+        <!-- Prevent keyboard focus so Enter/Space cannot activate the tab buttons -->
+        <focusActive value="false"/>
+    </Profile>
+
+    <Profile name="adnavi_list" extends="emptyPanel" with="anchorStretchingYStretchingX pivotTopLeft">
+    </Profile>
+
+    <Profile name="adnavi_listItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="32px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+        <flowDirection value="horizontal" />
+        <alignmentY value="middle" />
+    </Profile>
+
+    <Profile name="adnavi_itemLabel" extends="fs25_textDarkHighlight">
+        <textBold value="true"/>
+        <textOffset value="10px 0px"/>
+        <size value="70% 32px"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="adnavi_itemValue" extends="fs25_textDarkHighlight">
+        <size value="30% 32px"/>
+        <textAlignment value="right"/>
+    </Profile>
+
+    <Profile name="adnavi_sliderBox" extends="fs25_listSliderBox" with="anchorTopRight">
+    </Profile>
+
+    <Profile name="adnavi_slider" extends="fs25_listSlider">
+    </Profile>
+
+    <Profile name="adnavi_buttonBox" extends="fs25_dialogButtonBox">
+        <absoluteSizeOffset value="0px 0px"/>
+        <position value="0px 0px"/>
+    </Profile>
+</GUIProfiles>
