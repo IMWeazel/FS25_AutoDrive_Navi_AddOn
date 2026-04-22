@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <elements>
+        <!-- Input action names (shown in the FS25 Controls menu) -->
+        <e k="ADNAVI_TOGGLE"            v="AD-Navi: Route ein-/ausschalten"/>
+        <e k="ADNAVI_SETTINGS"          v="AD-Navi: Einstellungen öffnen"/>
+
+        <!-- Dialog chrome -->
+        <e k="adnavi_settings_title"    v="AD-Navi - Einstellungen"/>
+        <e k="adnavi_tab_minimap"       v="Minimap"/>
+        <e k="adnavi_tab_road"          v="Straße"/>
+        <e k="adnavi_close"             v="Schließen"/>
+
+        <!-- Setting labels -->
+        <e k="adnavi_display"           v="Anzeigen"/>
+        <e k="adnavi_color"             v="Farbe"/>
+        <e k="adnavi_thickness"         v="Dicke"/>
+        <e k="adnavi_visibility"        v="Sichtbarkeit"/>
+        <e k="adnavi_length"            v="Länge"/>
+        <e k="adnavi_start"             v="Start"/>
+
+        <!-- On / Off -->
+        <e k="adnavi_on"                v="Ein"/>
+        <e k="adnavi_off"               v="Aus"/>
+
+        <!-- Colors -->
+        <e k="adnavi_color_red"         v="Rot"/>
+        <e k="adnavi_color_green"       v="Grün"/>
+        <e k="adnavi_color_blue"        v="Blau"/>
+        <e k="adnavi_color_white"       v="Weiß"/>
+
+        <!-- Minimap visibility distances -->
+        <e k="adnavi_vis_100m"          v="100 m"/>
+        <e k="adnavi_vis_150m"          v="150 m"/>
+        <e k="adnavi_vis_200m"          v="200 m"/>
+        <e k="adnavi_vis_250m"          v="250 m"/>
+        <e k="adnavi_vis_300m"          v="300 m"/>
+        <e k="adnavi_vis_350m"          v="350 m"/>
+        <e k="adnavi_vis_400m"          v="400 m"/>
+        <e k="adnavi_vis_450m"          v="450 m"/>
+        <e k="adnavi_vis_500m"          v="500 m"/>
+        <e k="adnavi_vis_550m"          v="550 m"/>
+        <e k="adnavi_vis_600m"          v="600 m"/>
+        <e k="adnavi_vis_full"          v="Alles"/>
+
+        <!-- Minimap line thickness -->
+        <e k="adnavi_thick_2px"         v="2 px"/>
+        <e k="adnavi_thick_3px"         v="3 px"/>
+        <e k="adnavi_thick_4px"         v="4 px"/>
+        <e k="adnavi_thick_5px"         v="5 px"/>
+        <e k="adnavi_thick_6px"         v="6 px"/>
+
+        <!-- Road line length -->
+        <e k="adnavi_road_len_50m"      v="50 m"/>
+        <e k="adnavi_road_len_100m"     v="100 m"/>
+        <e k="adnavi_road_len_150m"     v="150 m"/>
+        <e k="adnavi_road_len_200m"     v="200 m"/>
+        <e k="adnavi_road_len_300m"     v="300 m"/>
+        <e k="adnavi_road_len_500m"     v="500 m"/>
+
+        <!-- Road line count (thickness) -->
+        <e k="adnavi_road_lines_1"      v="1 Linie"/>
+        <e k="adnavi_road_lines_2"      v="2 Linien"/>
+        <e k="adnavi_road_lines_3"      v="3 Linien"/>
+        <e k="adnavi_road_lines_5"      v="5 Linien"/>
+        <e k="adnavi_road_lines_9"      v="9 Linien"/>
+
+        <!-- Road line start offset -->
+        <e k="adnavi_road_start_0m"     v="0 m"/>
+        <e k="adnavi_road_start_5m"     v="5 m"/>
+        <e k="adnavi_road_start_10m"    v="10 m"/>
+        <e k="adnavi_road_start_20m"    v="20 m"/>
+        <e k="adnavi_road_start_30m"    v="30 m"/>
+        <e k="adnavi_road_start_50m"    v="50 m"/>
+    </elements>
+</l10n>

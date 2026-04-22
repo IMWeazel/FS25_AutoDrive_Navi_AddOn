@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer"/>
+    <Bitmap profile="dialogFullscreenBg"/>
+    <GuiElement profile="fs25_dialogBg" size="600px 500px">
+        <ThreePartBitmap profile="fs25_dialogBgMiddleSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgTopSmall"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+        <BoxLayout profile="adnavi_contentContainer">
+            <Text profile="adnavi_title" text="$l10n_adnavi_settings_title"/>
+            <ThreePartBitmap profile="adnavi_titleSep"/>
+
+            <!-- Tab selector: tab text is set dynamically from Lua -->
+            <BoxLayout profile="adnavi_tabBar">
+                <Button id="tabMinimapBtn" profile="adnavi_tabButton" text="" onClick="onClickTabMinimap"/>
+                <Button id="tabRoadBtn"    profile="adnavi_tabButton" text="" onClick="onClickTabRoad"/>
+            </BoxLayout>
+
+            <!-- Settings list (no scrollbar - few items, not needed) -->
+            <BoxLayout absoluteSizeOffset="0px 130px" margin="0 0 0 10px">
+                <SmoothList id="settingsList" profile="adnavi_list">
+                    <ListItem profile="adnavi_listItem">
+                        <Text name="labelText" profile="adnavi_itemLabel"/>
+                        <Text name="valueText" profile="adnavi_itemValue"/>
+                    </ListItem>
+                </SmoothList>
+            </BoxLayout>
+
+            <BoxLayout profile="adnavi_buttonBox">
+                <Button profile="buttonBack" text="$l10n_adnavi_close" onClick="onClickBack"/>
+            </BoxLayout>
+        </BoxLayout>
+    </GuiElement>
+</GUI>
