@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="107">
-    <author>IMWeazel</author>
-    <version>0.1.0.0</version>
+    <author>IM_Weazel</author>
+    <version>1.0.0.0</version>
 
     <title>
         <en>AD Navi</en>
@@ -9,7 +9,7 @@
     </title>
     <description>
         <en>Shows the AutoDrive route on the ingame minimap while manually driving.</en>
-        <de>Zeigt die AutoDrive-Route auf der Ingame-Minimap an, auch wenn man selbst faehrt.</de>
+        <de>Zeigt die AutoDrive-Route auf der Ingame-Minimap an, auch wenn man selbst fährt.</de>
     </description>
 
     <iconFilename>icon.dds</iconFilename>
