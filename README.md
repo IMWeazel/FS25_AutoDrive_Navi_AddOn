@@ -1,4 +1,4 @@
-# FS25 AutoDrive NAvi AddOn
+# FS25 AutoDrive Navi AddOn
 
 Transparency notice: This mod has been created with AI.
 
