@@ -672,7 +672,7 @@ local function collectState()
         if WPs ~= nil and #WPs > 0 then usingLiveRoute = true end
     end
     if not usingLiveRoute then
-        WPs       = ADNavi.capturedWayPoints
+        WPs       = vehicle ~= nil and ADNavi.capturedWayPoints or nil
         currentWp = nil
     end
 
