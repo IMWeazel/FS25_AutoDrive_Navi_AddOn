@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="107">
     <author>IM_Weazel</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
 
     <title>
         <en>AutoDrive Navi</en>
@@ -14,7 +14,7 @@
 
     <iconFilename>icon.dds</iconFilename>
 
-    <multiplayer supported="false"/>
+    <multiplayer supported="true"/>
 
     <dependencies>
         <dependency>FS25_AutoDrive</dependency>
@@ -42,6 +42,7 @@
         </actionBinding>
         <!-- No default; user assigns in the Controls menu -->
         <actionBinding action="ADNAVI_SETTINGS">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_rshift KEY_lctrl KEY_n" />
         </actionBinding>
     </inputBinding>
 
